@@ -3,33 +3,33 @@
 int main(){
 	float prf,bon;
 	int cnt;
-	printf("ÇëÊäÈëÀûÈó£¨µ¥Î»£ºÍòÔª£©\nÈçÀûÈóÎª10.5ÍòÔªÔòÓ¦ÊäÈë\n10.5\n");
+	printf("è¯·è¾“å…¥åˆ©æ¶¦ï¼ˆå•ä½ï¼šä¸‡å…ƒï¼‰\nå¦‚åˆ©æ¶¦ä¸º10.5ä¸‡å…ƒåˆ™åº”è¾“å…¥\n10.5\n");
 	scanf("%f",&prf);
 	cnt=prf/10;
 	switch(cnt)
 	{
 		case 0:bon=prf*0.1;
-				printf("½±½ğ×Ü¶îÎª%f(ÍòÔª)",bon);
+				printf("å¥–é‡‘æ€»é¢ä¸º%f(ä¸‡å…ƒ)",bon);
 				break;
 		case 1:bon=1+0.075*(prf-10); 
-				printf("½±½ğ×Ü¶îÎª%f(ÍòÔª)",bon);
+				printf("å¥–é‡‘æ€»é¢ä¸º%f(ä¸‡å…ƒ)",bon);
 				break;
 		case 2:
 		case 3:bon=1+0.75+0.05*(prf-20);
-			printf("½±½ğ×Ü¶îÎª%f(ÍòÔª)",bon);
+			printf("å¥–é‡‘æ€»é¢ä¸º%f(ä¸‡å…ƒ)",bon);
 			break;
 		case 4:
 		case 5:bon=1+0.75+1+0.03*(prf-40);
-				printf("½±½ğ×Ü¶îÎª%f(ÍòÔª)",bon);
+				printf("å¥–é‡‘æ€»é¢ä¸º%f(ä¸‡å…ƒ)",bon);
 				break;
 		case 6:
 		case 7:
 		case 8:
 		case 9:bon=1+0.75+1+0.6+0.015*(prf-60);
-					printf("½±½ğ×Ü¶îÎª%f(ÍòÔª)",bon);
+					printf("å¥–é‡‘æ€»é¢ä¸º%f(ä¸‡å…ƒ)",bon);
 					break;
 		default:bon=1+0.75+1+0.6+0.6+(prf-100)*0.01;
-				printf("½±½ğ×Ü¶îÎª%f(ÍòÔª)",bon);
+				printf("å¥–é‡‘æ€»é¢ä¸º%f(ä¸‡å…ƒ)",bon);
 		
 	}
 	return 0;
